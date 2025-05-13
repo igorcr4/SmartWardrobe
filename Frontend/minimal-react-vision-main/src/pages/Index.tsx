@@ -118,31 +118,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-          
-          {/* Inspiration */}
-          <div>
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-semibold">Inspirație</h2>
-              <Button variant="ghost" size="sm">
-                <Plus size={18} />
-              </Button>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              {inspirationItems.slice(0, 4).map(item => (
-                <OutfitCard key={item.id} imageSrc={item.src} alt={item.alt} />
-              ))}
-            </div>
-            
-            <div className="flex justify-center mt-4 gap-2">
-              <Button variant="outline" size="sm" className="rounded-full p-3">
-                <RefreshCw size={18} />
-              </Button>
-              <Button variant="outline" size="sm" className="rounded-full p-3">
-                <Plus size={18} />
-              </Button>
-            </div>
-          </div>
         </div>
       </div>
     </Layout>
